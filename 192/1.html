@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Anketa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: calc(100% - 16px); /* Убираем отступы от padding формы */
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical; /* Разрешаем изменять высоту textarea */
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        ul li {
+            list-style: none;
+            margin: 0 10px;
+        }
+
+        ul a {
+            text-decoration: none;
+            color: #060101;
+            padding: 5px 10px;
+            border: 1px solid #050101;
+            border-radius: 5px;
+        }
+
+        ul a:hover {
+            background-color: #000000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Anketa</h1>
+    <form>
+        <div class="form-group">
+            <input type="text" placeholder="Imie">
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Nazwisko">
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Ulica">
+        </div>
+        <div class="form-group">
+            <input type="number" placeholder="Dom">
+        </div>
+        <div class="form-group">
+            <input type="number" placeholder="Obywatelstwo">
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Miasto">
+        </div>
+        <div class="form-group">
+            <input type="date" placeholder="Data urodzenia">
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Telefon">
+        </div>
+        <div class="form-group">
+            <input type="email" placeholder="E-mail">
+        </div>
+        <div class="form-group">
+            <select>
+                <option disabled selected>Plec</option>
+                <option>М</option>
+                <option>Ż</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select>
+                <option disabled selected>Prawo jazdy</option>
+                <option>Tak</option>
+                <option>Nie</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="password" placeholder="Haslo">
+        </div>
+        <div class="form-group">
+            <textarea placeholder="Komentarz"></textarea>
+        </div>
+    </form>
+    <ul>
+        <li><a href="index.html">Back</a></li>
+    </ul>
+</body>
+</html>
